@@ -1,0 +1,7 @@
+<div class="global-container" [style.background]="backgroundColor()">
+  <div class="svg-container" [style.background-color]="svgBackgroundColor()">
+    <ng-content select="[icon]"></ng-content>
+  </div>
+  <h3 class="text-xl">{{ title() }}</h3>
+  <p class="text-medium">{{ description() }}</p>
+</div>

@@ -1,0 +1,87 @@
+@import "../../../styles/design-tokens";
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $ds-btn-font-weight;
+  border: none;
+  border-radius: $ds-border-radius;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  gap: 0.5rem;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.btn--primary {
+  background: $ds-btn-primary-bg;
+  color: $ds-btn-primary-color;
+
+  &::after {
+    content: "➔";
+    display: inline-block;
+    margin-left: 0.5ch;
+    font-size: 1.2em;
+    vertical-align: middle;
+  }
+
+  &:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+}
+
+.btn--secondary {
+  background: transparent;
+  color: $ds-btn-secondary-color;
+  border: 2px solid $ds-btn-secondary-border-color;
+
+  &:hover:not(:disabled) {
+    background: $ds-btn-secondary-hover-bg;
+  }
+}
+
+.btn--tertiary {
+  background: $ds-btn-tertiary-bg;
+  color: $ds-btn-tertiary-color;
+  font-weight: 500;
+
+  &:hover:not(:disabled) {
+    filter: brightness(0.9);
+  }
+}
+
+.btn--sm {
+  padding: $ds-btn-padding-sm;
+  font-size: $ds-btn-font-size-sm;
+  &:hover:not(:disabled) {
+    background: $ds-btn-secondary-hover-bg;
+  }
+}
+
+.btn--md {
+  padding: $ds-btn-padding-md;
+  font-size: $ds-btn-font-size-md;
+  line-height: 1;
+  min-height: 2.75rem;
+}
+
+.btn--lg {
+  padding: $ds-btn-padding-lg;
+  font-size: $ds-btn-font-size-lg;
+}
+
+.btn__icon {
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.btn__icon.hidden {
+  visibility: hidden;
+}

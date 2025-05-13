@@ -1,0 +1,28 @@
+.global-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1vh 10vw;
+}
+
+.cards-container {
+  display: flex;
+  align-items: stretch;
+  gap: 3rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+app-expertise-card {
+  flex: 1;
+  min-width: 200px;
+}

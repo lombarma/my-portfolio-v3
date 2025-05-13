@@ -1,0 +1,41 @@
+.global-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background: radial-gradient(circle at top left, #e0d4ff, #b4c7f7, #d8dbff);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10vw;
+  width: 100%;
+}
+
+.left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

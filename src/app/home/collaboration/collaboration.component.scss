@@ -1,0 +1,24 @@
+.global-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(69, 72, 252, 1) 100%
+  );
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 4vh 0;
+}
+
+h1,
+p {
+  color: white;
+}
