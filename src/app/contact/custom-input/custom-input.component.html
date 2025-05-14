@@ -1,0 +1,14 @@
+<div class="form-group">
+  <label [for]="name">{{ label }}</label>
+  <input
+    [id]="name"
+    [type]="type"
+    [name]="name"
+    [placeholder]="placeholder"
+    [value]="value"
+    [disabled]="disabled"
+    (input)="onInput($event)"
+    (blur)="onBlur()"
+    class="custom-input"
+  />
+</div>

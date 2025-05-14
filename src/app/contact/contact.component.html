@@ -1,0 +1,38 @@
+<app-inside-header
+  header="Get in touch"
+  title="Contact Me"
+  description="Have a question or want to work together? Reach out!"
+></app-inside-header>
+<section class="contact">
+  <section class="informations"></section>
+  <section class="send-message">
+    <h2>Send me a message</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <app-custom-input
+        label="Your Name :"
+        name="name"
+        placeholder="Your name"
+        formControlName="name"
+      >
+      </app-custom-input>
+
+      <app-custom-input
+        label="Your email :"
+        type="email"
+        name="email"
+        placeholder="you@example.com"
+        formControlName="email"
+      >
+      </app-custom-input>
+      <label for="message">Message :</label>
+      <textarea
+        name="message"
+        rows="10"
+        cols="30"
+        formControlName="message"
+        placeholder="Your message"
+      ></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</section>
