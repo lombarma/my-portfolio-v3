@@ -34,8 +34,32 @@ img {
   margin: 1rem;
 }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .skills,
 .links {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+.url {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.url a {
+  color: inherit;
+}
+
+.url:hover a {
+  color: #7c3aed;
+}
+
+.url:hover {
+  color: #7c3aed;
 }
