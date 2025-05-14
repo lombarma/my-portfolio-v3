@@ -1,0 +1,22 @@
+@if(cardData(); as data) {
+<div class="global-container">
+  <div class="picture-container">
+    <img [src]="data.picture?.path" [alt]="data.picture?.altDescrption" />
+  </div>
+  <div class="text-container">
+    <h2>{{ data.title }}</h2>
+    <p>
+      {{ data.description }}
+    </p>
+    <div class="skills">
+      @for(skill of data.tags; track $index) {
+      <app-tag [tagInput]="skill"></app-tag>
+      }
+    </div>
+    <div class="links">
+      <span><a [href]="data.demoUrl">Demo</a></span>
+      <span><a [href]="data.repoUrl">Code</a></span>
+    </div>
+  </div>
+</div>
+}

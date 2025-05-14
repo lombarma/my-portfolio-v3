@@ -1,0 +1,7 @@
+<div class="global-container">
+  <section class="projects">
+    @for(project of projects; track $index) {
+    <app-project-card [cardData]="project"></app-project-card>
+    }
+  </section>
+</div>
