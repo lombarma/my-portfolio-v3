@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { InsideHeaderComponent } from '../shared/inside-header/inside-header.component';
 import { CustomInputComponent } from './custom-input/custom-input.component';
+import { RowCardComponent } from './row-card/row-card.component';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +12,7 @@ import { CustomInputComponent } from './custom-input/custom-input.component';
     CustomInputComponent,
     ReactiveFormsModule,
     HttpClientModule,
+    RowCardComponent,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
@@ -36,7 +38,10 @@ export class ContactComponent {
     formData.append('message', this.form.value.message ?? '');
 
     this.http.post('https://formspree.io/f/xgvkrajn', formData).subscribe({
-      next: () => alert('Mail sent!'),
+      next: () => {
+        alert('Mail sent!');
+        this.form.reset();
+      },
       error: () =>
         alert('Error, please try again later or constact me by my mail'),
     });

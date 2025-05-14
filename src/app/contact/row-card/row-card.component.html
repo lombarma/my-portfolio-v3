@@ -1,0 +1,11 @@
+<section class="container">
+  <div class="left-part">
+    <div class="svg-container" [style.background-color]="svgBackgroundColor()">
+      <ng-content select="[icon]"></ng-content>
+    </div>
+  </div>
+  <div class="right-part">
+    <h3>{{ title() }}</h3>
+    <span>{{ description() }}</span>
+  </div>
+</section>
