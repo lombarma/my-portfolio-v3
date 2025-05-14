@@ -8,20 +8,6 @@
   background: linear-gradient(to bottom right, #eef2ff, #ffffff, #f5f3ff);
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 3em 0;
-}
-
-.purple {
-  color: #9333ea;
-  font-weight: 600;
-}
-
 .projects {
   display: grid;
   justify-items: center;

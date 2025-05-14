@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3em 0;
+}
+
+.purple {
+  color: #9333ea;
+  font-weight: 600;
+}
