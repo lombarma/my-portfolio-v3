@@ -14,7 +14,7 @@
   column-gap: 2rem;
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 3vh auto;
 }
 
 h3 {
@@ -55,4 +55,13 @@ a {
 
 .text-color {
   color: #e9d5ff;
+}
+
+.horizontal-line {
+  margin: 3vh 10vw;
+}
+
+footer {
+  text-align: center;
+  color: #d8b4fe;
 }
