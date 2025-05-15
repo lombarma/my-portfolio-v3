@@ -13,7 +13,7 @@ export const PROJECTS: Card[] = [
     repoUrl: 'https://github.com/lombarma/portfolio-generator-v2',
   },
   {
-    title: 'Intra school Social Network',
+    title: 'Nexus - Intra school Social Network',
     description:
       'Social networking platform for students, allowing association, event organization, and communication through posts and messages.',
     tags: ['Python(Django)', 'MySQL', 'HTML/CSS', 'Project Management'],
