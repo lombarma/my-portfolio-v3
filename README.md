@@ -5,3 +5,5 @@
 ### Designed by MagicPattern
 
 ### Made with Angular
+
+### Hosted on Vercel
