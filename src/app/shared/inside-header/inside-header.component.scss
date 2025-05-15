@@ -12,3 +12,15 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  .header {
+    margin: 2em 0;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto 2rem;
+  }
+}

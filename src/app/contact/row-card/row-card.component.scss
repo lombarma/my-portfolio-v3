@@ -28,3 +28,15 @@
   padding: 0.5rem;
   border-radius: 10px;
 }
+
+@media (max-width: 1130px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-part {
+    margin-bottom: 1rem;
+  }
+}
