@@ -1,0 +1,44 @@
+.experience-card {
+  border: 1px solid #ddd6ff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(123, 97, 255, 0.15);
+  color: #2a2a2a;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.job-title {
+  margin-bottom: 0.25rem;
+}
+
+.company {
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 01rem;
+  display: block;
+  color: #9333ea;
+}
+
+.company:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}

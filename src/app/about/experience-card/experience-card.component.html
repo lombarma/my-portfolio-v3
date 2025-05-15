@@ -1,0 +1,22 @@
+@for (experience of experiences(); track $index) {
+<section class="experience-card">
+  <div class="header">
+    <h3 class="job-title">{{ experience.title }}</h3>
+    <time class="date" datetime="2021-01"
+      >{{ experience.startDate }} – {{ experience.endDate }}</time
+    >
+  </div>
+  <a [href]="experience.companyUrl" class="company" target="_blank">{{
+    experience.company
+  }}</a>
+  @if (experience.isListing) {
+  <ul>
+    @for (item of experience.listItems; track $index) {
+    <li>{{ item }}</li>
+    }
+  </ul>
+  } @else {
+  <p>{{ experience.description }}</p>
+  }
+</section>
+}
