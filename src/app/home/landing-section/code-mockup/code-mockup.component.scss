@@ -9,7 +9,7 @@ global-container {
 
 .code-mockup {
   position: relative;
-  width: 420px;
+  width: 350px;
   padding: 24px;
   background: #fff;
   border-radius: 16px;
@@ -61,4 +61,10 @@ global-container {
 }
 .code-mockup__line--blue {
   background: #d6e4ff;
+}
+
+@media (max-width: 1076px) {
+  .code-mockup {
+    width: 200px;
+  }
 }
