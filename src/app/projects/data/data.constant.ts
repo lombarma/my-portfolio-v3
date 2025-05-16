@@ -33,6 +33,8 @@ export const PROJECTS: Card[] = [
       altDescrption: 'House Prices Prediction Screenshot',
     },
     repoUrl: 'https://github.com/lombarma/HousePricePredicition',
+    demoUrl:
+      'https://housepricepredicition-fsoerznfcpwkvgv5nxconr.streamlit.app/',
   },
   {
     title: 'Meteo Application',
