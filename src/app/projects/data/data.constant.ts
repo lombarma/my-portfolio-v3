@@ -43,7 +43,8 @@ export const PROJECTS: Card[] = [
       path: 'assets/images/weather-app.webp',
       altDescrption: 'Weather App Screenshot',
     },
-    repoUrl: 'https://github.com/lombarma/MyMeteoApp',
+    repoUrl: 'https://github.com/lombarma/my-weather-app-v2',
+    demoUrl: 'https://weather.maximelombardo.com',
   },
   {
     title: 'Handwriting Recognition',
