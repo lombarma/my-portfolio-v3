@@ -48,7 +48,7 @@ export const EDUCATIONS: Experience[] = [
     title: 'M.SC. in Computer Engineering',
     company: 'ESIEE Paris',
     companyUrl: 'https://www.esiee.fr/',
-    startDate: '2020-01-09',
+    startDate: 'SEP 2020',
     endDate: 'Present',
     isCurrent: true,
     description:
