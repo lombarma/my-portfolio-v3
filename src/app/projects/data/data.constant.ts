@@ -2,6 +2,25 @@ import { Card } from '../types/card.type';
 
 export const PROJECTS: Card[] = [
   {
+    title: 'F1 Data Visualization',
+    description:
+      'Interactive data visualization platform for Formula 1. Made with an ETL pipeline to extract, transform, and load data from various sources.',
+    tags: [
+      'Python',
+      'Pandas',
+      'Airflow',
+      'Streamlit',
+      'Data Engineering',
+      'Docker',
+      'PostgreSQL',
+    ],
+    picture: {
+      path: 'assets/images/f1-insights-dashboard.webp',
+      altDescrption: 'F1 Data Visualization Screenshot',
+    },
+    repoUrl: 'https://github.com/lombarma/f1_data_project',
+  },
+  {
     title: 'Portfolio Generator',
     description:
       'Dynamic portfolio generator that creates personalized portfolios based on user input, showcasing skills, experiences and projects.',
